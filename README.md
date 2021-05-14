@@ -10,13 +10,15 @@
 ## Install
 
 ```sh
+git clone https://github.com/KashyapNasit/vaccine-availability-checker.git
+cd vaccine-availability-checker
 npm install
 ```
 
 ## Usage
 
-Update EMAIL_ID and PASSWORD in ```
-mailer.js```
+1. Update _<EMAIL>_ and _<PASSWORD>_ in ```mailer.js```
+2. Change setting and allow login from less secure app [here](https://myaccount.google.com/lesssecureapps)
 
 ```sh
 npm run start
