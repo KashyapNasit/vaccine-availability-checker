@@ -1,10 +1,13 @@
 const nodemailer = require("nodemailer");
 
+const email = "<EMAIL>";
+const password = "<PASSWORD>";
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "<EMAIL>",
-    pass: "<PASSWORD>",
+    user: email,
+    pass: password,
   },
 });
 
@@ -13,7 +16,7 @@ function logIt(data, type) {
   const now = new Date();
   const tommorow_date = now.toString();
   fs.appendFileSync(
-    "/home/kashyap/Desktop/Vaccine/hello-world/data/log.txt",
+    "log.txt",
     "\n" + tommorow_date + ` [${type}] ` + data
   );
 }
@@ -77,7 +80,7 @@ function sendMail(to, data) {
 
   body = body + "</table></body></html>";
   const mailOptions = {
-    from: "knasit29@gmail.com",
+    from: email,
     to: to,
     subject: "Found a vaccine center for you!",
     html: body,

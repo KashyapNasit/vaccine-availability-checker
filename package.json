@@ -1,0 +1,29 @@
+{
+  "name": "vaccine-availability-checker",
+  "version": "1.0.0",
+  "description": "A simple node program to check the availability of the vaccine and send a mail.",
+  "main": "vaccine.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "nodemailer": "^6.6.0",
+    "date-and-time": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node vaccine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KashyapNasit/vaccine-availability-checker.git"
+  },
+  "keywords": [
+    "vaccine"
+  ],
+  "author": "KashyapNasit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KashyapNasit/vaccine-availability-checker/issues"
+  },
+  "homepage": "https://github.com/KashyapNasit/vaccine-availability-checker#readme"
+}

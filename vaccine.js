@@ -3,7 +3,7 @@ const date = require("date-and-time");
 const mailer = require("./mailer");
 
 function main() {
-  const data = require("../data/db");
+  const data = require("./db.json");
   data.forEach((user) => {
     checkAvaibility(user);
   });
@@ -18,7 +18,7 @@ function logIt(data, type) {
   const now = new Date();
   const tommorow_date = now.toString();
   fs.appendFileSync(
-    "/home/kashyap/Desktop/Vaccine/hello-world/data/log.txt",
+    "log.txt",
     "\n" + tommorow_date + ` [${type}] ` + data
   );
 }
