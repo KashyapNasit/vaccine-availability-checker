@@ -24,6 +24,9 @@ npm install
 
 ## Usage
 
+Update EMAIL_ID and PASSWORD in ```sh
+mailer.js```
+
 ```sh
 npm run start
 ```
